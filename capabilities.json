@@ -1,0 +1,8 @@
+{
+  "capabilities": [
+    {
+      "capability": "chrome",
+      "capabilityId": "localChrome"
+    }
+  ]
+}
