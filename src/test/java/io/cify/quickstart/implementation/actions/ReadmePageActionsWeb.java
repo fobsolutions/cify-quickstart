@@ -1,6 +1,6 @@
 package io.cify.quickstart.implementation.actions;
 
-import io.cify.framework.core.models.Device;
+import io.cify.framework.core.Device;
 import io.cify.quickstart.implementation.pages.ReadmePage;
 
 /**

@@ -32,6 +32,8 @@ Clone quickstart project
 Usage
 -------------
 
+### Without device farm
+
 #### Run
 
 > 
@@ -46,6 +48,7 @@ Main files to look at:
 
 ----------
 
+### With device farm
 
 Learn more from [cify-runner](https://github.com/fobsolutions/cify-runner)  and [cify-framework](https://github.com/fobsolutions/cify-framework)  projects
 

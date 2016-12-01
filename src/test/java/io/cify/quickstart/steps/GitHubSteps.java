@@ -1,29 +1,35 @@
 package io.cify.quickstart.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cify.framework.core.Device;
+import io.cify.framework.core.DeviceCategory;
 import io.cify.framework.core.DeviceManager;
+import io.cify.quickstart.implementation.matchers.ReadmePageMatchersWeb;
+
+import static io.cify.framework.core.DeviceManager.getInstance;
 
 /**
  * Created by FOB Solutions
  */
 public class GitHubSteps {
 
-    @After
-    public void close() {
-        DeviceManager.quitDevices();
-    }
-
     @When("^user opens Cify quickstart readme page$")
     public void userOpensCifyQuickstartReadmePage() {
-        DeviceManager.createDevice().openBrowser("https://github.com/fobsolutions/cify-quickstart/blob/master/README.md");
+        Device device = getInstance().createDevice(DeviceCategory.BROWSER);
+        device.openBrowser("https://github.com/fobsolutions/cify-quickstart/blob/master/README.md");
     }
 
     @Then("^readme should be visible$")
     public void readmeShouldBeVisible() {
+        Device device = DeviceManager.getInstance().getActiveDevice();
+        ReadmePageMatchersWeb matchersWeb = new ReadmePageMatchersWeb(device);
+        matchersWeb.shouldHaveContent();
+    }
 
+    @After
+    public void close() {
+        getInstance().quitAllDevices();
     }
 }

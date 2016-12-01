@@ -1,5 +1,5 @@
 group 'io.cify'
-version '1.0.0'
+version '1.0.1'
 
 apply plugin: 'java'
 apply plugin: 'groovy'
@@ -13,7 +13,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath('io.cify:cify-runner:1.0.0')
+        classpath('io.cify:cify-runner:1.2.2')
     }
 }
 
@@ -22,12 +22,11 @@ repositories {
         url "http://fobsolutions.bintray.com/io.cify"
     }
     mavenCentral()
-    mavenLocal()
 }
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.3.11'
-    compile 'io.cify:cify-framework:1.0.0'
+    compile 'io.cify:cify-framework:1.2.8'
     compile group: 'info.cukes', name: 'cucumber-java', version: '1.2.4'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }

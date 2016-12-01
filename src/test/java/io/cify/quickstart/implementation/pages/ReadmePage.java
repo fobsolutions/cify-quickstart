@@ -1,7 +1,7 @@
 package io.cify.quickstart.implementation.pages;
 
 import io.cify.framework.PageObjects;
-import io.cify.framework.core.models.Device;
+import io.cify.framework.core.Device;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

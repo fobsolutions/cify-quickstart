@@ -1,8 +1,10 @@
 {
-  "capabilities": [
-    {
-      "capability": "chrome",
-      "capabilityId": "localChrome"
-    }
-  ]
+  "set": {
+    "browser": [
+      {
+        "capability": "chrome",
+        "name": "Local chrome"
+      }
+    ]
+  }
 }
