@@ -3,11 +3,10 @@ package io.cify.quickstart.implementation.actions;
 /**
  * Created by FOB Solutions
  */
-interface ReadmePageActions {
+public interface ReadmePageActions {
 
     /**
-     * Clicks on a repository author link
+     * Checks if readme have some content
      */
-    void clickOnRepositoryAuthor();
-
+    void shouldHaveContent();
 }

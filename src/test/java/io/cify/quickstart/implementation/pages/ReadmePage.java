@@ -13,18 +13,11 @@ public class ReadmePage extends PageObjects {
     @FindBy(id = "readme")
     private WebElement readme;
 
-    @FindBy(className = "author")
-    private WebElement author;
-
     public ReadmePage(Device device) {
         super(device);
     }
 
     public WebElement getReadme() {
         return readme;
-    }
-
-    public WebElement getAuthor() {
-        return author;
     }
 }

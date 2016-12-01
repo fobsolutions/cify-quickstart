@@ -6,7 +6,7 @@ import cucumber.api.java.en.When;
 import io.cify.framework.core.Device;
 import io.cify.framework.core.DeviceCategory;
 import io.cify.framework.core.DeviceManager;
-import io.cify.quickstart.implementation.matchers.ReadmePageMatchersWeb;
+import io.cify.quickstart.implementation.actions.ReadmePageActionsWeb;
 
 import static io.cify.framework.core.DeviceManager.getInstance;
 
@@ -24,7 +24,7 @@ public class GitHubSteps {
     @Then("^readme should be visible$")
     public void readmeShouldBeVisible() {
         Device device = DeviceManager.getInstance().getActiveDevice();
-        ReadmePageMatchersWeb matchersWeb = new ReadmePageMatchersWeb(device);
+        ReadmePageActionsWeb matchersWeb = new ReadmePageActionsWeb(device);
         matchersWeb.shouldHaveContent();
     }
 
