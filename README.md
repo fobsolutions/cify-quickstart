@@ -11,6 +11,8 @@ Cify Framework project is hosted on GitHub where you can find source code, an is
 
 Cify Framework is developed by [FOB Solutions](http://www.fob-solutions.com/) 
 
+[YouTube video tutorial for Cify Quickstart](https://youtu.be/YN0_b6bki3Y)
+
 ----------
 
 
