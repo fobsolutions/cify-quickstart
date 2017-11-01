@@ -1,4 +1,4 @@
-package io.cify.quickstart.implementation.pages;
+package io.cify.quickstart.implementation.readme.pages;
 
 import io.cify.framework.PageObjects;
 import io.cify.framework.core.Device;

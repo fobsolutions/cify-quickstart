@@ -6,7 +6,8 @@ import cucumber.api.java.en.When;
 import io.cify.framework.core.Device;
 import io.cify.framework.core.DeviceCategory;
 import io.cify.framework.core.DeviceManager;
-import io.cify.quickstart.implementation.actions.ReadmePageActionsWeb;
+import io.cify.quickstart.implementation.ActionsImpl;
+import io.cify.quickstart.implementation.readme.actions.ReadmePageActionsWeb;
 
 import static io.cify.framework.core.DeviceManager.getInstance;
 
@@ -17,15 +18,14 @@ public class GitHubSteps {
 
     @When("^user opens Cify quickstart readme page$")
     public void userOpensCifyQuickstartReadmePage() {
-        Device device = getInstance().createDevice(DeviceCategory.BROWSER);
+        String deviceName = (String) DeviceManager.getInstance().getCapabilities().toDesiredCapabilities(DeviceCategory.BROWSER).getCapability("name");
+        Device device = getInstance().createDevice(DeviceCategory.BROWSER, deviceName);
         device.openBrowser("https://github.com/fobsolutions/cify-quickstart/blob/master/README.md");
     }
 
     @Then("^readme should be visible$")
     public void readmeShouldBeVisible() {
-        Device device = DeviceManager.getInstance().getActiveDevice();
-        ReadmePageActionsWeb matchersWeb = new ReadmePageActionsWeb(device);
-        matchersWeb.shouldHaveContent();
+        ActionsImpl.getReadmeActions().shouldHaveContent();
     }
 
     @After
