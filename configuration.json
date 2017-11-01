@@ -2,22 +2,10 @@
   "videoRecord": true,
   "videoDir": "build/cify/videos/",
   "capabilities": {
-    "android": {
-      "capability": "android",
-      "UIType": "MobileAndroidApp",
-      "deviceName": "Android Device",
-      "fullReset": "true"
-    },
     "browser": {
-      "UIType": "DesktopWeb",
-      "capability": "chrome"
-    },
-    "ios": {
-      "capability": "iphone",
-      "UIType": "MobileIOSApp",
-      "deviceName": "iOS Device",
-      "fullReset": "true",
-      "autoAcceptAlerts": "true"
+      "capability": "chrome",
+      "UIType": "Web",
+      "deviceName": "Local Chrome Browser"
     }
   }
 }
