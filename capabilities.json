@@ -3,7 +3,8 @@
     "browser": [
       {
         "capability": "chrome",
-        "name": "Local chrome"
+        "UIType": "Web",
+        "name": "Local Chrome Browser"
       }
     ]
   }

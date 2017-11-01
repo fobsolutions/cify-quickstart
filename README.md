@@ -32,8 +32,6 @@ Clone quickstart project
 Usage
 -------------
 
-### Without device farm
-
 #### Run
 
 > 
@@ -48,58 +46,11 @@ Main files to look at:
 
 ----------
 
-### With device farm
-
-#### Clone device farm with gradle task
-
-On Mac OS X
-
-    ./gradlew cloneDeviceFarm
-   
-On Windows
-
-    gradlew cloneDeviceFarm
-
-#### Install farm dependencies
-
-OS X on terminal execute following commands (you have to be on the root folder of the CPTA project)
-
-Before running install command make sure that you have **XCode** installed!
-
-    $ cd devicefarm
-    $ ./device-farm.sh install
-   
-On Windows machines users have to install following dependencies manually
-
-- [DOCKER TOOLBOX](https://www.docker.com/products/docker-toolbox)
-- [VIRTUAL BOX EXTENSION BACK](http://download.virtualbox.org/virtualbox/5.1.8/Oracle_VM_VirtualBox_Extension_Pack-5.1.8-111374.vbox-extpack)
-
-### Start device farm
-
-OS X on terminal execute following commands (you need to be on the devicefarm folder)
-
-NB! Unplug connected devices before executing start command and plug devices in when prompted so.
-
-     ./device-farm.sh start
-   
-On Windows
-
-    device-farm.sh start
-
-### Verify that farm is started
-
-At the end of starting process device farm prints to console couple of URL's.
-
-    Example:
-    http://192.168.99.100:4444/grid/console
-
-Copy and paste the console URL into browser and make sure that all the needed Nodes are visible. (Nodes can take couple of seconds to become visible)
-
 ### Add remote capability to properties and/or configuration
 
 - configuration.json
 
-Add the device farm URL (from terminal windows after start command) into **remote** capability to **configuration.json** file like following:
+Add the device farm URL into **remote** capability to **configuration.json** file like following:
 
 ```
 {
@@ -108,19 +59,19 @@ Add the device farm URL (from terminal windows after start command) into **remot
   "capabilities": {
     "android": {
       "capability": "android",
-      "UIType": "MobileAndroidApp",
+      "UIType": "Android",
       "deviceName": "Android Device",
       "fullReset": "true",
       "remote": "http://192.168.99.100:4444/wd/hub"
     },
     "browser": {
-      "UIType": "DesktopWeb",
+      "UIType": "Web",
       "capability": "chrome",
       "remote": "http://192.168.99.100:4444/wd/hub"
     },
     "ios": {
       "capability": "iphone",
-      "UIType": "MobileIOSApp",
+      "UIType": "IOS",
       "deviceName": "iOS Device",
       "fullReset": "true",
       "autoAcceptAlerts": "true",

@@ -1,9 +1,9 @@
-package io.cify.quickstart.implementation.actions;
+package io.cify.quickstart.implementation.readme.actions;
 
 /**
  * Created by FOB Solutions
  */
-public interface ReadmePageActions {
+public interface IReadmePageActions {
 
     /**
      * Checks if readme have some content
