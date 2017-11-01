@@ -3,6 +3,7 @@ package io.cify.quickstart.implementation.readme.pages;
 import io.cify.framework.PageObjects;
 import io.cify.framework.core.Device;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 
 /**
@@ -10,7 +11,10 @@ import org.openqa.selenium.support.FindBy;
  */
 public class ReadmePage extends PageObjects {
 
-    @FindBy(id = "readme")
+    @FindAll({
+            @FindBy(id = "readme"),
+            @FindBy(className = "markdown-body")
+    })
     private WebElement readme;
 
     public ReadmePage(Device device) {
