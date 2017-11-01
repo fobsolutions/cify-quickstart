@@ -18,7 +18,7 @@ public class GitHubSteps {
 
     @When("^user opens Cify quickstart readme page$")
     public void userOpensCifyQuickstartReadmePage() {
-        String deviceName = (String) DeviceManager.getInstance().getCapabilities().toDesiredCapabilities(DeviceCategory.BROWSER).getCapability("name");
+        String deviceName = (String) DeviceManager.getInstance().getCapabilities().toDesiredCapabilities(DeviceCategory.BROWSER).getCapability("deviceName");
         Device device = getInstance().createDevice(DeviceCategory.BROWSER, deviceName);
         device.openBrowser("https://github.com/fobsolutions/cify-quickstart/blob/master/README.md");
     }
