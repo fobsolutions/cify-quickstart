@@ -100,3 +100,6 @@ farmUrl=http://192.168.99.100:4444/wd/hub
 Learn more from [cify-runner](https://github.com/fobsolutions/cify-runner)  and [cify-framework](https://github.com/fobsolutions/cify-framework)  projects
 
 Cify is developed under Apache 2.0 licence by FOB Solutions
+
+
+[![Analytics](https://ga-beacon.appspot.com/UA-109814182-1/cify-pages)](https://github.com/fobsolutions/cify-pages)
