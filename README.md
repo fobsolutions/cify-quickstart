@@ -102,4 +102,4 @@ Learn more from [cify-runner](https://github.com/fobsolutions/cify-runner)  and 
 Cify is developed under Apache 2.0 licence by FOB Solutions
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-109814182-1/cify-pages)](https://github.com/fobsolutions/cify-pages)
+[![Analytics](https://ga-beacon.appspot.com/UA-109814182-1/cify-quickstart)](https://github.com/fobsolutions/cify-quickstart)
