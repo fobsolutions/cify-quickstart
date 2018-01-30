@@ -18,7 +18,8 @@ Cify Framework is developed by [FOB Solutions](http://www.fob-solutions.com/)
 
 Precondition
 ------------
-
+ - Java 8 (Java 9 has issues with gradle)
+ - Gradle
  - Google Chrome
 
 Installation
