@@ -1,5 +1,6 @@
 {
-  "set": {
+  "strategy": "variations",
+  "capabilities": {
     "browser": [
       {
         "capability": "chrome",
