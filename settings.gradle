@@ -1,2 +1,11 @@
-rootProject.name = 'quickstart'
+pluginManagement {
+    repositories {
+        // maven {
+        //     url = 'https://cify-artifacts.s3.eu-central-1.amazonaws.com'
+        // }
+        mavenCentral()
+        mavenLocal()
+    }
+}
 
+rootProject.name = 'quickstart'
